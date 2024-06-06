@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block pagename %}
+Home
+{% endblock %}
+
+{% block header %}
+All Cupcakes
+{% endblock %}
+
+{% block content %}
+
+
+<h2>Add Cupcake</h2>
+
+<ul id="cupcakes-index">    
+</ul>
+
+<form id="add-cupcake-form">
+    <div>
+        <label for="form-flavor">Flavor: </label>
+        <input name="flavor" id="form-flavor">
+    </div>
+    <div>
+        <label for="size-flavor">Size: </label>
+        <input name="size" id="form-size">
+    </div>
+    <div>
+        <label for="rating-flavor">Rating: </label>
+        <input name="rating" id="form-rating">
+    </div>
+    <div>
+        <label for="form-image">Image: </label>
+        <input name="image" id="form-image">
+    </div>
+    <button>Add</button>
+</form>
+{% endblock %}
